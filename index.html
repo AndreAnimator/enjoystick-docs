@@ -8,7 +8,7 @@
     Página estática servida direto de public/ (sem rota Laravel e sem Blade).
     Os caminhos são absolutos de propósito: assim funcionam com ou sem a barra final em /api/docs.
   -->
-    <link rel="stylesheet" href="/assets/swagger-ui.css" />
+    <link rel="stylesheet" href="./assets/swagger-ui.css" />
     <style>
       html {
         box-sizing: border-box;
@@ -31,10 +31,10 @@
       >A documentação da API (Swagger UI) precisa de JavaScript.</noscript
     >
 
-    <script src="/assets/swagger-ui-bundle.js"></script>
+    <script src="./assets/swagger-ui-bundle.js"></script>
     <script>
       (function () {
-        var SPEC_URL = "/api/docs/openapi.yaml";
+        var SPEC_URL = "./openapi.yaml";
         var CSRF_URL = "/sanctum/csrf-cookie";
         var SAFE_METHODS = { GET: true, HEAD: true, OPTIONS: true };
 
